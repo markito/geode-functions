@@ -1,0 +1,1517 @@
+:[info 2016/08/16 22:05:14.996 PDT <Test worker> tid=0xb] 
+L---------------------------------------------------------------------------
+  
+E  Licensed to the Apache Software Foundation (ASF) under one or more
+M  contributor license agreements.  See the NOTICE file distributed with this
+A  work for additional information regarding copyright ownership.
+   
+J  The ASF licenses this file to You under the Apache License, Version 2.0
+K  (the "License"); you may not use this file except in compliance with the
+4  License.  You may obtain a copy of the License at
+  
+-  http://www.apache.org/licenses/LICENSE-2.0
+  
+F  Unless required by applicable law or agreed to in writing, software
+L  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+L  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+J  License for the specific language governing permissions and limitations
+  under the License.
+  
+L---------------------------------------------------------------------------
+^Java version:   1.0.0-incubating-SNAPSHOT wmarkito 0 2016-08-16 14:35:21 -0700 javac 1.8.0_77
+(Native version: native code unavailable
+:Source revision: e08c1f54448589c85237c5110d14e81ed679ddc9
+Source repository: develop
+=Running on: /192.168.3.10, 8 cpu(s), x86_64 Mac OS X 10.11.6
+Process ID: 99503
+User: wmarkito
+ACurrent dir: /Users/wmarkito/Pivotal/ASF/samples/geode-functions
+Home dir: /Users/wmarkito
+Command Line Parameters:
+\  -Djava.security.manager=jarjar.org.gradle.process.internal.child.BootstrapSecurityManager
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -ea
+Class Path:
+I  /Users/wmarkito/Pivotal/ASF/samples/geode-functions/build/classes/test
+K  /Users/wmarkito/Pivotal/ASF/samples/geode-functions/build/resources/test
+I  /Users/wmarkito/Pivotal/ASF/samples/geode-functions/build/classes/main
+K  /Users/wmarkito/Pivotal/ASF/samples/geode-functions/build/resources/main
+Ä  /Users/wmarkito/.m2/repository/org/apache/geode/geode-core/1.0.0-incubating-SNAPSHOT/geode-core-1.0.0-incubating-SNAPSHOT.jar
+Ñ  /Users/wmarkito/.m2/repository/org/apache/geode/geode-lucene/1.0.0-incubating-SNAPSHOT/geode-lucene-1.0.0-incubating-SNAPSHOT.jar
+A  /Users/wmarkito/.m2/repository/junit/junit/4.12/junit-4.12.jar
+|  /Users/wmarkito/.m2/repository/com/github/stephenc/findbugs/findbugs-annotations/1.3.9-1/findbugs-annotations-1.3.9-1.jar
+ò  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.jgroups/jgroups/3.6.10.Final/fc0ff5a8a9de27ab62939956f705c2909bf86bc2/jgroups-3.6.10.Final.jar
+C  /Users/wmarkito/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+n  /Users/wmarkito/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.0/jackson-databind-2.2.0.jar
+N  /Users/wmarkito/.m2/repository/commons-io/commons-io/2.3/commons-io-2.3.jar
+T  /Users/wmarkito/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar
+P  /Users/wmarkito/.m2/repository/it/unimi/dsi/fastutil/7.0.2/fastutil-7.0.2.jar
+b  /Users/wmarkito/.m2/repository/javax/resource/javax.resource-api/1.7/javax.resource-api-1.7.jar
+J  /Users/wmarkito/.m2/repository/net/java/dev/jna/jna/4.0.0/jna-4.0.0.jar
+ô  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.1/20f7d76f9d06033d68f1b8e58666e7c542e91f08/jopt-simple-5.0.1.jar
+õ  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.6.1/d2ad7ee0b0450204d720b4bc3f99b50e208bf51e/log4j-api-2.6.1.jar
+ù  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.6.1/2b557bf1023c3a3a0f7f200fafcd7641b89cbb83/log4j-core-2.6.1.jar
+ï  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-core/1.2.4/88d46aa726ecbd626380324564b58e29232f1fcf/shiro-core-1.2.4.jar
+Ñ  /Users/wmarkito/.m2/repository/org/apache/geode/geode-common/1.0.0-incubating-SNAPSHOT/geode-common-1.0.0-incubating-SNAPSHOT.jar
+Ä  /Users/wmarkito/.m2/repository/org/apache/geode/geode-json/1.0.0-incubating-SNAPSHOT/geode-json-1.0.0-incubating-SNAPSHOT.jar
+N  /Users/wmarkito/.m2/repository/org/fusesource/jansi/jansi/1.8/jansi-1.8.jar
+©  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.6.1/f473a40ee76f71f70bd123f9bc3acf572d9b288f/log4j-slf4j-impl-2.6.1.jar
+õ  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-jcl/2.6.1/9b350c474396d751f8a0f0c53857411acfec11fa/log4j-jcl-2.6.1.jar
+õ  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-jul/2.6.1/95c847bd2f28c0e17595d1a85736dbc739a64aec/log4j-jul-2.6.1.jar
+∞  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/6.0.0/abb404e5a429f92f6b43ce11bef81e95e9bac6ab/lucene-analyzers-common-6.0.0.jar
+ò  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/6.0.0/3aa09d24a630d2249fdd7056ce569a72ff54ebcf/lucene-core-6.0.0.jar
+û  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/6.0.0/6d88cb7b8666ea809f8c894996b682ceb9581d07/lucene-queries-6.0.0.jar
+¶  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/6.0.0/89ac493f4bc038632abc1b4df9737bc6d433b052/lucene-queryparser-6.0.0.jar
+V  /Users/wmarkito/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+t  /Users/wmarkito/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.0/jackson-annotations-2.2.0.jar
+f  /Users/wmarkito/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.0/jackson-core-2.2.0.jar
+k  /Users/wmarkito/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar
+§  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.3/686ef3410bcf4ab8ce7fd0b899e832aaba5facf7/commons-beanutils-1.8.3.jar
+]  /Users/wmarkito/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+û  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/6.0.0/5ab7f57a1ab03aad36e15b75dbc391c73866d347/lucene-sandbox-6.0.0.jar
+é  /Users/wmarkito/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar
+Library Path:
+*  /Users/wmarkito/Library/Java/Extensions
+  /Library/Java/Extensions
+#  /Network/Library/Java/Extensions
+"  /System/Library/Java/Extensions
+  /usr/lib/java
+  .
+System Properties:
+.    awt.toolkit = sun.lwawt.macosx.LWCToolkit
+    file.encoding = UTF-8
+    file.encoding.pkg = sun.io
+    file.separator = /
+>    ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    gopherProxySet = false
+?    http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+8    java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+7    java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+    java.class.version = 52.0
+j    java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/endorsed
+    java.ext.dirs = /Users/wmarkito/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+T    java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre
+G    java.io.tmpdir = /var/folders/_r/yr0xg9gs0wg1p2m15zknvw200000gp/T/
+8    java.runtime.name = Java(TM) SE Runtime Environment
+(    java.runtime.version = 1.8.0_20-b26
+>    java.specification.name = Java Platform API Specification
+3    java.specification.vendor = Oracle Corporation
+%    java.specification.version = 1.8
+%    java.vendor = Oracle Corporation
+.    java.vendor.url = http://java.oracle.com/
+>    java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+    java.version = 1.8.0_20
+    java.vm.info = mixed mode
+5    java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+D    java.vm.specification.name = Java Virtual Machine Specification
+6    java.vm.specification.vendor = Oracle Corporation
+(    java.vm.specification.version = 1.8
+(    java.vm.vendor = Oracle Corporation
+     java.vm.version = 25.20-b23
+    line.separator = 
+
+    org.gradle.test.worker = 1
+    os.version = 10.11.6
+    p2p.useSSL = false
+    path.separator = :
+?    socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    sun.arch.data.model = 64
+®    sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/classes
+d    sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+)    sun.io.unicode.encoding = UnicodeBig
+m    sun.java.command = jarjar.org.gradle.process.internal.launcher.GradleWorkerMain 'Gradle Test Executor 1'
+%    sun.java.launcher = SUN_STANDARD
+    sun.jnu.encoding = UTF-8
+>    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    sun.nio.ch.bugLevel = 
+!    sun.os.patch.level = unknown
+    user.country = US
+    user.language = en
+(    user.timezone = America/Los_Angeles
+    user.variant = 
+Log4J 2 Configuration:
+ó    jar:file:/Users/wmarkito/.m2/repository/org/apache/geode/geode-core/1.0.0-incubating-SNAPSHOT/geode-core-1.0.0-incubating-SNAPSHOT.jar!/log4j2.xml
+L---------------------------------------------------------------------------
+
+
+q[info 2016/08/16 22:05:15.139 PDT <Test worker> tid=0xb] Running in local mode since no locators were specified.
+
+r[info 2016/08/16 22:05:15.269 PDT <Test worker> tid=0xb] Initializing region _monitoringRegion_192.168.3.10<v-1>0
+
+Å[info 2016/08/16 22:05:15.279 PDT <Test worker> tid=0xb] Initialization of region _monitoringRegion_192.168.3.10<v-1>0 completed
+
+á[info 2016/08/16 22:05:15.297 PDT <Test worker> tid=0xb] Command Service could not be initialized. Could not find Spring Shell library which is needed for CLI/gfsh in classpath. Internal support for CLI & gfsh is not enabled. Note: For convenience, absolute path of "gfsh-dependencies.jar" from "lib" directory of GemFire product distribution can be included in CLASSPATH of an application.
+
+R[info 2016/08/16 22:05:15.474 PDT <Test worker> tid=0xb] Initializing region __PR
+
+a[info 2016/08/16 22:05:15.475 PDT <Test worker> tid=0xb] Initialization of region __PR completed
+
+x[info 2016/08/16 22:05:15.510 PDT <Test worker> tid=0xb] Partitioned Region /regionA is born with prId=1 ident:#regionA
+
+[[info 2016/08/16 22:05:15.566 PDT <Test worker> tid=0xb] Initializing region _B__regionA_9
+
+j[info 2016/08/16 22:05:15.567 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_9 completed
+
+ô[warn 2016/08/16 22:05:15.568 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.582 PDT <Test worker> tid=0xb] Initializing region _B__regionA_10
+
+k[info 2016/08/16 22:05:15.582 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_10 completed
+
+ô[warn 2016/08/16 22:05:15.583 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.585 PDT <Test worker> tid=0xb] Initializing region _B__regionA_11
+
+k[info 2016/08/16 22:05:15.586 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_11 completed
+
+ô[warn 2016/08/16 22:05:15.587 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.589 PDT <Test worker> tid=0xb] Initializing region _B__regionA_12
+
+k[info 2016/08/16 22:05:15.589 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_12 completed
+
+ô[warn 2016/08/16 22:05:15.590 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.592 PDT <Test worker> tid=0xb] Initializing region _B__regionA_13
+
+k[info 2016/08/16 22:05:15.592 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_13 completed
+
+ô[warn 2016/08/16 22:05:15.593 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.595 PDT <Test worker> tid=0xb] Initializing region _B__regionA_14
+
+k[info 2016/08/16 22:05:15.603 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_14 completed
+
+ô[warn 2016/08/16 22:05:15.604 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.605 PDT <Test worker> tid=0xb] Initializing region _B__regionA_15
+
+k[info 2016/08/16 22:05:15.605 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_15 completed
+
+ô[warn 2016/08/16 22:05:15.606 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.608 PDT <Test worker> tid=0xb] Initializing region _B__regionA_16
+
+k[info 2016/08/16 22:05:15.608 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_16 completed
+
+ô[warn 2016/08/16 22:05:15.609 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.611 PDT <Test worker> tid=0xb] Initializing region _B__regionA_17
+
+k[info 2016/08/16 22:05:15.612 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_17 completed
+
+ô[warn 2016/08/16 22:05:15.613 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.615 PDT <Test worker> tid=0xb] Initializing region _B__regionA_18
+
+k[info 2016/08/16 22:05:15.615 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_18 completed
+
+ô[warn 2016/08/16 22:05:15.616 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.618 PDT <Test worker> tid=0xb] Initializing region _B__regionA_110
+
+l[info 2016/08/16 22:05:15.618 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_110 completed
+
+ô[warn 2016/08/16 22:05:15.619 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.620 PDT <Test worker> tid=0xb] Initializing region _B__regionA_109
+
+l[info 2016/08/16 22:05:15.620 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_109 completed
+
+ô[warn 2016/08/16 22:05:15.621 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.622 PDT <Test worker> tid=0xb] Initializing region _B__regionA_108
+
+l[info 2016/08/16 22:05:15.623 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_108 completed
+
+ô[warn 2016/08/16 22:05:15.623 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.625 PDT <Test worker> tid=0xb] Initializing region _B__regionA_107
+
+l[info 2016/08/16 22:05:15.625 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_107 completed
+
+ô[warn 2016/08/16 22:05:15.626 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.628 PDT <Test worker> tid=0xb] Initializing region _B__regionA_106
+
+l[info 2016/08/16 22:05:15.628 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_106 completed
+
+ô[warn 2016/08/16 22:05:15.629 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.630 PDT <Test worker> tid=0xb] Initializing region _B__regionA_105
+
+l[info 2016/08/16 22:05:15.630 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_105 completed
+
+ô[warn 2016/08/16 22:05:15.631 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.632 PDT <Test worker> tid=0xb] Initializing region _B__regionA_104
+
+l[info 2016/08/16 22:05:15.632 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_104 completed
+
+ô[warn 2016/08/16 22:05:15.633 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.634 PDT <Test worker> tid=0xb] Initializing region _B__regionA_103
+
+l[info 2016/08/16 22:05:15.634 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_103 completed
+
+ô[warn 2016/08/16 22:05:15.635 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.637 PDT <Test worker> tid=0xb] Initializing region _B__regionA_102
+
+l[info 2016/08/16 22:05:15.637 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_102 completed
+
+ô[warn 2016/08/16 22:05:15.638 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.639 PDT <Test worker> tid=0xb] Initializing region _B__regionA_101
+
+l[info 2016/08/16 22:05:15.639 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_101 completed
+
+ô[warn 2016/08/16 22:05:15.640 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.642 PDT <Test worker> tid=0xb] Initializing region _B__regionA_79
+
+k[info 2016/08/16 22:05:15.642 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_79 completed
+
+ô[warn 2016/08/16 22:05:15.643 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.645 PDT <Test worker> tid=0xb] Initializing region _B__regionA_78
+
+k[info 2016/08/16 22:05:15.645 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_78 completed
+
+ô[warn 2016/08/16 22:05:15.646 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.648 PDT <Test worker> tid=0xb] Initializing region _B__regionA_77
+
+k[info 2016/08/16 22:05:15.648 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_77 completed
+
+ô[warn 2016/08/16 22:05:15.649 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.652 PDT <Test worker> tid=0xb] Initializing region _B__regionA_76
+
+k[info 2016/08/16 22:05:15.652 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_76 completed
+
+ô[warn 2016/08/16 22:05:15.652 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.655 PDT <Test worker> tid=0xb] Initializing region _B__regionA_75
+
+k[info 2016/08/16 22:05:15.655 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_75 completed
+
+ô[warn 2016/08/16 22:05:15.656 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.657 PDT <Test worker> tid=0xb] Initializing region _B__regionA_74
+
+k[info 2016/08/16 22:05:15.657 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_74 completed
+
+ô[warn 2016/08/16 22:05:15.658 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.660 PDT <Test worker> tid=0xb] Initializing region _B__regionA_73
+
+k[info 2016/08/16 22:05:15.660 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_73 completed
+
+ô[warn 2016/08/16 22:05:15.661 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.663 PDT <Test worker> tid=0xb] Initializing region _B__regionA_72
+
+k[info 2016/08/16 22:05:15.663 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_72 completed
+
+ô[warn 2016/08/16 22:05:15.664 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.666 PDT <Test worker> tid=0xb] Initializing region _B__regionA_71
+
+k[info 2016/08/16 22:05:15.667 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_71 completed
+
+ô[warn 2016/08/16 22:05:15.668 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.670 PDT <Test worker> tid=0xb] Initializing region _B__regionA_70
+
+k[info 2016/08/16 22:05:15.670 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_70 completed
+
+ô[warn 2016/08/16 22:05:15.671 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.674 PDT <Test worker> tid=0xb] Initializing region _B__regionA_48
+
+k[info 2016/08/16 22:05:15.675 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_48 completed
+
+ô[warn 2016/08/16 22:05:15.675 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.678 PDT <Test worker> tid=0xb] Initializing region _B__regionA_47
+
+k[info 2016/08/16 22:05:15.678 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_47 completed
+
+ô[warn 2016/08/16 22:05:15.679 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.680 PDT <Test worker> tid=0xb] Initializing region _B__regionA_46
+
+k[info 2016/08/16 22:05:15.680 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_46 completed
+
+ô[warn 2016/08/16 22:05:15.681 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.682 PDT <Test worker> tid=0xb] Initializing region _B__regionA_45
+
+k[info 2016/08/16 22:05:15.683 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_45 completed
+
+ô[warn 2016/08/16 22:05:15.683 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.685 PDT <Test worker> tid=0xb] Initializing region _B__regionA_44
+
+k[info 2016/08/16 22:05:15.685 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_44 completed
+
+ô[warn 2016/08/16 22:05:15.686 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.688 PDT <Test worker> tid=0xb] Initializing region _B__regionA_43
+
+k[info 2016/08/16 22:05:15.688 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_43 completed
+
+ô[warn 2016/08/16 22:05:15.689 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.691 PDT <Test worker> tid=0xb] Initializing region _B__regionA_42
+
+k[info 2016/08/16 22:05:15.691 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_42 completed
+
+ô[warn 2016/08/16 22:05:15.691 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.692 PDT <Test worker> tid=0xb] Initializing region _B__regionA_41
+
+k[info 2016/08/16 22:05:15.692 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_41 completed
+
+ô[warn 2016/08/16 22:05:15.693 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.693 PDT <Test worker> tid=0xb] Initializing region _B__regionA_40
+
+k[info 2016/08/16 22:05:15.694 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_40 completed
+
+ô[warn 2016/08/16 22:05:15.694 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.695 PDT <Test worker> tid=0xb] Initializing region _B__regionA_39
+
+k[info 2016/08/16 22:05:15.695 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_39 completed
+
+ô[warn 2016/08/16 22:05:15.695 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.698 PDT <Test worker> tid=0xb] Initializing region _B__regionA_8
+
+j[info 2016/08/16 22:05:15.698 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_8 completed
+
+ô[warn 2016/08/16 22:05:15.698 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.699 PDT <Test worker> tid=0xb] Initializing region _B__regionA_99
+
+k[info 2016/08/16 22:05:15.700 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_99 completed
+
+ô[warn 2016/08/16 22:05:15.700 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.702 PDT <Test worker> tid=0xb] Initializing region _B__regionA_98
+
+k[info 2016/08/16 22:05:15.702 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_98 completed
+
+ô[warn 2016/08/16 22:05:15.703 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.704 PDT <Test worker> tid=0xb] Initializing region _B__regionA_97
+
+k[info 2016/08/16 22:05:15.704 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_97 completed
+
+ô[warn 2016/08/16 22:05:15.704 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.706 PDT <Test worker> tid=0xb] Initializing region _B__regionA_96
+
+k[info 2016/08/16 22:05:15.706 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_96 completed
+
+ô[warn 2016/08/16 22:05:15.706 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.707 PDT <Test worker> tid=0xb] Initializing region _B__regionA_95
+
+k[info 2016/08/16 22:05:15.708 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_95 completed
+
+ô[warn 2016/08/16 22:05:15.708 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.710 PDT <Test worker> tid=0xb] Initializing region _B__regionA_94
+
+k[info 2016/08/16 22:05:15.711 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_94 completed
+
+ô[warn 2016/08/16 22:05:15.711 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.713 PDT <Test worker> tid=0xb] Initializing region _B__regionA_93
+
+k[info 2016/08/16 22:05:15.713 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_93 completed
+
+ô[warn 2016/08/16 22:05:15.714 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.715 PDT <Test worker> tid=0xb] Initializing region _B__regionA_92
+
+k[info 2016/08/16 22:05:15.715 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_92 completed
+
+ô[warn 2016/08/16 22:05:15.715 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.716 PDT <Test worker> tid=0xb] Initializing region _B__regionA_91
+
+k[info 2016/08/16 22:05:15.716 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_91 completed
+
+ô[warn 2016/08/16 22:05:15.717 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.719 PDT <Test worker> tid=0xb] Initializing region _B__regionA_90
+
+k[info 2016/08/16 22:05:15.719 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_90 completed
+
+ô[warn 2016/08/16 22:05:15.720 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.721 PDT <Test worker> tid=0xb] Initializing region _B__regionA_68
+
+k[info 2016/08/16 22:05:15.721 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_68 completed
+
+ô[warn 2016/08/16 22:05:15.722 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.724 PDT <Test worker> tid=0xb] Initializing region _B__regionA_67
+
+k[info 2016/08/16 22:05:15.724 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_67 completed
+
+ô[warn 2016/08/16 22:05:15.724 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.726 PDT <Test worker> tid=0xb] Initializing region _B__regionA_66
+
+k[info 2016/08/16 22:05:15.726 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_66 completed
+
+ô[warn 2016/08/16 22:05:15.726 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.728 PDT <Test worker> tid=0xb] Initializing region _B__regionA_65
+
+k[info 2016/08/16 22:05:15.729 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_65 completed
+
+ô[warn 2016/08/16 22:05:15.729 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.731 PDT <Test worker> tid=0xb] Initializing region _B__regionA_64
+
+k[info 2016/08/16 22:05:15.731 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_64 completed
+
+ô[warn 2016/08/16 22:05:15.732 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.735 PDT <Test worker> tid=0xb] Initializing region _B__regionA_63
+
+k[info 2016/08/16 22:05:15.735 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_63 completed
+
+ô[warn 2016/08/16 22:05:15.736 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.738 PDT <Test worker> tid=0xb] Initializing region _B__regionA_62
+
+k[info 2016/08/16 22:05:15.738 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_62 completed
+
+ô[warn 2016/08/16 22:05:15.739 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.740 PDT <Test worker> tid=0xb] Initializing region _B__regionA_61
+
+k[info 2016/08/16 22:05:15.740 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_61 completed
+
+ô[warn 2016/08/16 22:05:15.741 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.742 PDT <Test worker> tid=0xb] Initializing region _B__regionA_60
+
+k[info 2016/08/16 22:05:15.742 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_60 completed
+
+ô[warn 2016/08/16 22:05:15.743 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.744 PDT <Test worker> tid=0xb] Initializing region _B__regionA_59
+
+k[info 2016/08/16 22:05:15.745 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_59 completed
+
+ô[warn 2016/08/16 22:05:15.745 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.746 PDT <Test worker> tid=0xb] Initializing region _B__regionA_37
+
+k[info 2016/08/16 22:05:15.747 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_37 completed
+
+ô[warn 2016/08/16 22:05:15.747 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.749 PDT <Test worker> tid=0xb] Initializing region _B__regionA_36
+
+k[info 2016/08/16 22:05:15.749 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_36 completed
+
+ô[warn 2016/08/16 22:05:15.750 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.752 PDT <Test worker> tid=0xb] Initializing region _B__regionA_35
+
+k[info 2016/08/16 22:05:15.752 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_35 completed
+
+ô[warn 2016/08/16 22:05:15.753 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.754 PDT <Test worker> tid=0xb] Initializing region _B__regionA_34
+
+k[info 2016/08/16 22:05:15.754 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_34 completed
+
+ô[warn 2016/08/16 22:05:15.755 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.756 PDT <Test worker> tid=0xb] Initializing region _B__regionA_33
+
+k[info 2016/08/16 22:05:15.756 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_33 completed
+
+ô[warn 2016/08/16 22:05:15.756 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.757 PDT <Test worker> tid=0xb] Initializing region _B__regionA_32
+
+k[info 2016/08/16 22:05:15.758 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_32 completed
+
+ô[warn 2016/08/16 22:05:15.758 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.759 PDT <Test worker> tid=0xb] Initializing region _B__regionA_31
+
+k[info 2016/08/16 22:05:15.760 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_31 completed
+
+ô[warn 2016/08/16 22:05:15.760 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.761 PDT <Test worker> tid=0xb] Initializing region _B__regionA_30
+
+k[info 2016/08/16 22:05:15.762 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_30 completed
+
+ô[warn 2016/08/16 22:05:15.762 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.763 PDT <Test worker> tid=0xb] Initializing region _B__regionA_29
+
+k[info 2016/08/16 22:05:15.763 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_29 completed
+
+ô[warn 2016/08/16 22:05:15.763 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.765 PDT <Test worker> tid=0xb] Initializing region _B__regionA_28
+
+k[info 2016/08/16 22:05:15.766 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_28 completed
+
+ô[warn 2016/08/16 22:05:15.766 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.768 PDT <Test worker> tid=0xb] Initializing region _B__regionA_6
+
+j[info 2016/08/16 22:05:15.769 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_6 completed
+
+ô[warn 2016/08/16 22:05:15.769 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.771 PDT <Test worker> tid=0xb] Initializing region _B__regionA_5
+
+j[info 2016/08/16 22:05:15.771 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_5 completed
+
+ô[warn 2016/08/16 22:05:15.771 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.773 PDT <Test worker> tid=0xb] Initializing region _B__regionA_4
+
+j[info 2016/08/16 22:05:15.773 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_4 completed
+
+ô[warn 2016/08/16 22:05:15.773 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.774 PDT <Test worker> tid=0xb] Initializing region _B__regionA_3
+
+j[info 2016/08/16 22:05:15.775 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_3 completed
+
+ô[warn 2016/08/16 22:05:15.775 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.777 PDT <Test worker> tid=0xb] Initializing region _B__regionA_2
+
+j[info 2016/08/16 22:05:15.777 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_2 completed
+
+ô[warn 2016/08/16 22:05:15.778 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.779 PDT <Test worker> tid=0xb] Initializing region _B__regionA_1
+
+j[info 2016/08/16 22:05:15.779 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_1 completed
+
+ô[warn 2016/08/16 22:05:15.779 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.780 PDT <Test worker> tid=0xb] Initializing region _B__regionA_0
+
+j[info 2016/08/16 22:05:15.780 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_0 completed
+
+ô[warn 2016/08/16 22:05:15.780 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.781 PDT <Test worker> tid=0xb] Initializing region _B__regionA_112
+
+l[info 2016/08/16 22:05:15.781 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_112 completed
+
+ô[warn 2016/08/16 22:05:15.781 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.783 PDT <Test worker> tid=0xb] Initializing region _B__regionA_111
+
+l[info 2016/08/16 22:05:15.783 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_111 completed
+
+ô[warn 2016/08/16 22:05:15.784 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.787 PDT <Test worker> tid=0xb] Initializing region _B__regionA_88
+
+k[info 2016/08/16 22:05:15.787 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_88 completed
+
+ô[warn 2016/08/16 22:05:15.788 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.789 PDT <Test worker> tid=0xb] Initializing region _B__regionA_87
+
+k[info 2016/08/16 22:05:15.789 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_87 completed
+
+ô[warn 2016/08/16 22:05:15.789 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.790 PDT <Test worker> tid=0xb] Initializing region _B__regionA_86
+
+k[info 2016/08/16 22:05:15.790 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_86 completed
+
+ô[warn 2016/08/16 22:05:15.790 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.791 PDT <Test worker> tid=0xb] Initializing region _B__regionA_85
+
+k[info 2016/08/16 22:05:15.791 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_85 completed
+
+ô[warn 2016/08/16 22:05:15.791 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.792 PDT <Test worker> tid=0xb] Initializing region _B__regionA_84
+
+k[info 2016/08/16 22:05:15.792 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_84 completed
+
+ô[warn 2016/08/16 22:05:15.792 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.793 PDT <Test worker> tid=0xb] Initializing region _B__regionA_83
+
+k[info 2016/08/16 22:05:15.793 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_83 completed
+
+ô[warn 2016/08/16 22:05:15.794 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.795 PDT <Test worker> tid=0xb] Initializing region _B__regionA_82
+
+k[info 2016/08/16 22:05:15.795 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_82 completed
+
+ô[warn 2016/08/16 22:05:15.795 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.796 PDT <Test worker> tid=0xb] Initializing region _B__regionA_81
+
+k[info 2016/08/16 22:05:15.796 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_81 completed
+
+ô[warn 2016/08/16 22:05:15.796 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.797 PDT <Test worker> tid=0xb] Initializing region _B__regionA_80
+
+k[info 2016/08/16 22:05:15.797 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_80 completed
+
+ô[warn 2016/08/16 22:05:15.797 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.799 PDT <Test worker> tid=0xb] Initializing region _B__regionA_69
+
+k[info 2016/08/16 22:05:15.799 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_69 completed
+
+ô[warn 2016/08/16 22:05:15.800 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.803 PDT <Test worker> tid=0xb] Initializing region _B__regionA_38
+
+k[info 2016/08/16 22:05:15.804 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_38 completed
+
+ô[warn 2016/08/16 22:05:15.804 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.809 PDT <Test worker> tid=0xb] Initializing region _B__regionA_7
+
+j[info 2016/08/16 22:05:15.810 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_7 completed
+
+ô[warn 2016/08/16 22:05:15.811 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.822 PDT <Test worker> tid=0xb] Initializing region _B__regionA_89
+
+k[info 2016/08/16 22:05:15.822 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_89 completed
+
+ô[warn 2016/08/16 22:05:15.823 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.826 PDT <Test worker> tid=0xb] Initializing region _B__regionA_58
+
+k[info 2016/08/16 22:05:15.826 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_58 completed
+
+ô[warn 2016/08/16 22:05:15.826 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.828 PDT <Test worker> tid=0xb] Initializing region _B__regionA_57
+
+k[info 2016/08/16 22:05:15.828 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_57 completed
+
+ô[warn 2016/08/16 22:05:15.828 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.830 PDT <Test worker> tid=0xb] Initializing region _B__regionA_56
+
+k[info 2016/08/16 22:05:15.830 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_56 completed
+
+ô[warn 2016/08/16 22:05:15.831 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.832 PDT <Test worker> tid=0xb] Initializing region _B__regionA_55
+
+k[info 2016/08/16 22:05:15.833 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_55 completed
+
+ô[warn 2016/08/16 22:05:15.833 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.835 PDT <Test worker> tid=0xb] Initializing region _B__regionA_54
+
+k[info 2016/08/16 22:05:15.835 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_54 completed
+
+ô[warn 2016/08/16 22:05:15.835 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.836 PDT <Test worker> tid=0xb] Initializing region _B__regionA_53
+
+k[info 2016/08/16 22:05:15.836 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_53 completed
+
+ô[warn 2016/08/16 22:05:15.837 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.838 PDT <Test worker> tid=0xb] Initializing region _B__regionA_52
+
+k[info 2016/08/16 22:05:15.838 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_52 completed
+
+ô[warn 2016/08/16 22:05:15.838 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.840 PDT <Test worker> tid=0xb] Initializing region _B__regionA_51
+
+k[info 2016/08/16 22:05:15.840 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_51 completed
+
+ô[warn 2016/08/16 22:05:15.841 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.842 PDT <Test worker> tid=0xb] Initializing region _B__regionA_50
+
+k[info 2016/08/16 22:05:15.843 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_50 completed
+
+ô[warn 2016/08/16 22:05:15.844 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.846 PDT <Test worker> tid=0xb] Initializing region _B__regionA_27
+
+k[info 2016/08/16 22:05:15.847 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_27 completed
+
+ô[warn 2016/08/16 22:05:15.847 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.849 PDT <Test worker> tid=0xb] Initializing region _B__regionA_26
+
+k[info 2016/08/16 22:05:15.849 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_26 completed
+
+ô[warn 2016/08/16 22:05:15.850 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.851 PDT <Test worker> tid=0xb] Initializing region _B__regionA_25
+
+k[info 2016/08/16 22:05:15.851 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_25 completed
+
+ô[warn 2016/08/16 22:05:15.851 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.852 PDT <Test worker> tid=0xb] Initializing region _B__regionA_24
+
+k[info 2016/08/16 22:05:15.853 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_24 completed
+
+ô[warn 2016/08/16 22:05:15.853 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.854 PDT <Test worker> tid=0xb] Initializing region _B__regionA_23
+
+k[info 2016/08/16 22:05:15.854 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_23 completed
+
+ô[warn 2016/08/16 22:05:15.854 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.855 PDT <Test worker> tid=0xb] Initializing region _B__regionA_22
+
+k[info 2016/08/16 22:05:15.855 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_22 completed
+
+ô[warn 2016/08/16 22:05:15.855 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.856 PDT <Test worker> tid=0xb] Initializing region _B__regionA_21
+
+k[info 2016/08/16 22:05:15.856 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_21 completed
+
+ô[warn 2016/08/16 22:05:15.857 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.858 PDT <Test worker> tid=0xb] Initializing region _B__regionA_20
+
+k[info 2016/08/16 22:05:15.859 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_20 completed
+
+ô[warn 2016/08/16 22:05:15.859 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.860 PDT <Test worker> tid=0xb] Initializing region _B__regionA_19
+
+k[info 2016/08/16 22:05:15.860 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_19 completed
+
+ô[warn 2016/08/16 22:05:15.860 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:15.888 PDT <Test worker> tid=0xb] Initializing region _B__regionA_49
+
+k[info 2016/08/16 22:05:15.888 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_49 completed
+
+ô[warn 2016/08/16 22:05:15.889 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:15.894 PDT <Test worker> tid=0xb] Initializing region _B__regionA_100
+
+l[info 2016/08/16 22:05:15.894 PDT <Test worker> tid=0xb] Initialization of region _B__regionA_100 completed
+
+ô[warn 2016/08/16 22:05:15.894 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+x[info 2016/08/16 22:05:15.937 PDT <Test worker> tid=0xb] Partitioned Region /regionB is born with prId=2 ident:#regionB
+
+D[info 2016/08/16 22:05:15.980 PDT <Test worker> tid=0xb] Running...
+
+[[info 2016/08/16 22:05:15.993 PDT <Test worker> tid=0xb] Initializing region _B__regionB_2
+
+j[info 2016/08/16 22:05:15.993 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_2 completed
+
+ô[warn 2016/08/16 22:05:15.993 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.994 PDT <Test worker> tid=0xb] Initializing region _B__regionB_3
+
+j[info 2016/08/16 22:05:15.994 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_3 completed
+
+ô[warn 2016/08/16 22:05:15.995 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.995 PDT <Test worker> tid=0xb] Initializing region _B__regionB_0
+
+j[info 2016/08/16 22:05:15.995 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_0 completed
+
+ô[warn 2016/08/16 22:05:15.996 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.996 PDT <Test worker> tid=0xb] Initializing region _B__regionB_1
+
+j[info 2016/08/16 22:05:15.996 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_1 completed
+
+ô[warn 2016/08/16 22:05:15.996 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.997 PDT <Test worker> tid=0xb] Initializing region _B__regionB_6
+
+j[info 2016/08/16 22:05:15.997 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_6 completed
+
+ô[warn 2016/08/16 22:05:15.997 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.997 PDT <Test worker> tid=0xb] Initializing region _B__regionB_4
+
+j[info 2016/08/16 22:05:15.997 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_4 completed
+
+ô[warn 2016/08/16 22:05:15.998 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:15.998 PDT <Test worker> tid=0xb] Initializing region _B__regionB_5
+
+j[info 2016/08/16 22:05:15.998 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_5 completed
+
+ô[warn 2016/08/16 22:05:15.999 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.000 PDT <Test worker> tid=0xb] Initializing region _B__regionB_30
+
+k[info 2016/08/16 22:05:16.000 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_30 completed
+
+ô[warn 2016/08/16 22:05:16.001 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.001 PDT <Test worker> tid=0xb] Initializing region _B__regionB_31
+
+k[info 2016/08/16 22:05:16.001 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_31 completed
+
+ô[warn 2016/08/16 22:05:16.002 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.003 PDT <Test worker> tid=0xb] Initializing region _B__regionB_28
+
+k[info 2016/08/16 22:05:16.003 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_28 completed
+
+ô[warn 2016/08/16 22:05:16.004 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.005 PDT <Test worker> tid=0xb] Initializing region _B__regionB_29
+
+k[info 2016/08/16 22:05:16.005 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_29 completed
+
+ô[warn 2016/08/16 22:05:16.005 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.007 PDT <Test worker> tid=0xb] Initializing region _B__regionB_83
+
+k[info 2016/08/16 22:05:16.007 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_83 completed
+
+ô[warn 2016/08/16 22:05:16.008 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.011 PDT <Test worker> tid=0xb] Initializing region _B__regionB_84
+
+k[info 2016/08/16 22:05:16.011 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_84 completed
+
+ô[warn 2016/08/16 22:05:16.012 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.013 PDT <Test worker> tid=0xb] Initializing region _B__regionB_81
+
+k[info 2016/08/16 22:05:16.013 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_81 completed
+
+ô[warn 2016/08/16 22:05:16.014 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.017 PDT <Test worker> tid=0xb] Initializing region _B__regionB_82
+
+k[info 2016/08/16 22:05:16.017 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_82 completed
+
+ô[warn 2016/08/16 22:05:16.018 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.020 PDT <Test worker> tid=0xb] Initializing region _B__regionB_87
+
+k[info 2016/08/16 22:05:16.020 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_87 completed
+
+ô[warn 2016/08/16 22:05:16.021 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.022 PDT <Test worker> tid=0xb] Initializing region _B__regionB_88
+
+k[info 2016/08/16 22:05:16.022 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_88 completed
+
+ô[warn 2016/08/16 22:05:16.022 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.023 PDT <Test worker> tid=0xb] Initializing region _B__regionB_85
+
+k[info 2016/08/16 22:05:16.023 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_85 completed
+
+ô[warn 2016/08/16 22:05:16.024 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.025 PDT <Test worker> tid=0xb] Initializing region _B__regionB_86
+
+k[info 2016/08/16 22:05:16.025 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_86 completed
+
+ô[warn 2016/08/16 22:05:16.025 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.026 PDT <Test worker> tid=0xb] Initializing region _B__regionB_111
+
+l[info 2016/08/16 22:05:16.026 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_111 completed
+
+ô[warn 2016/08/16 22:05:16.026 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.028 PDT <Test worker> tid=0xb] Initializing region _B__regionB_112
+
+l[info 2016/08/16 22:05:16.028 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_112 completed
+
+ô[warn 2016/08/16 22:05:16.029 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.030 PDT <Test worker> tid=0xb] Initializing region _B__regionB_110
+
+l[info 2016/08/16 22:05:16.030 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_110 completed
+
+ô[warn 2016/08/16 22:05:16.031 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.032 PDT <Test worker> tid=0xb] Initializing region _B__regionB_66
+
+k[info 2016/08/16 22:05:16.033 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_66 completed
+
+ô[warn 2016/08/16 22:05:16.033 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.034 PDT <Test worker> tid=0xb] Initializing region _B__regionB_67
+
+k[info 2016/08/16 22:05:16.035 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_67 completed
+
+ô[warn 2016/08/16 22:05:16.035 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.036 PDT <Test worker> tid=0xb] Initializing region _B__regionB_64
+
+k[info 2016/08/16 22:05:16.036 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_64 completed
+
+ô[warn 2016/08/16 22:05:16.036 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.037 PDT <Test worker> tid=0xb] Initializing region _B__regionB_65
+
+k[info 2016/08/16 22:05:16.037 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_65 completed
+
+ô[warn 2016/08/16 22:05:16.037 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.038 PDT <Test worker> tid=0xb] Initializing region _B__regionB_68
+
+k[info 2016/08/16 22:05:16.038 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_68 completed
+
+ô[warn 2016/08/16 22:05:16.039 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.039 PDT <Test worker> tid=0xb] Initializing region _B__regionB_90
+
+k[info 2016/08/16 22:05:16.040 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_90 completed
+
+ô[warn 2016/08/16 22:05:16.040 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.041 PDT <Test worker> tid=0xb] Initializing region _B__regionB_91
+
+k[info 2016/08/16 22:05:16.041 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_91 completed
+
+ô[warn 2016/08/16 22:05:16.041 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.043 PDT <Test worker> tid=0xb] Initializing region _B__regionB_94
+
+k[info 2016/08/16 22:05:16.043 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_94 completed
+
+ô[warn 2016/08/16 22:05:16.043 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.045 PDT <Test worker> tid=0xb] Initializing region _B__regionB_95
+
+k[info 2016/08/16 22:05:16.045 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_95 completed
+
+ô[warn 2016/08/16 22:05:16.045 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.047 PDT <Test worker> tid=0xb] Initializing region _B__regionB_92
+
+k[info 2016/08/16 22:05:16.047 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_92 completed
+
+ô[warn 2016/08/16 22:05:16.047 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.048 PDT <Test worker> tid=0xb] Initializing region _B__regionB_93
+
+k[info 2016/08/16 22:05:16.048 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_93 completed
+
+ô[warn 2016/08/16 22:05:16.048 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.049 PDT <Test worker> tid=0xb] Initializing region _B__regionB_34
+
+k[info 2016/08/16 22:05:16.049 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_34 completed
+
+ô[warn 2016/08/16 22:05:16.050 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.051 PDT <Test worker> tid=0xb] Initializing region _B__regionB_35
+
+k[info 2016/08/16 22:05:16.051 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_35 completed
+
+ô[warn 2016/08/16 22:05:16.052 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.055 PDT <Test worker> tid=0xb] Initializing region _B__regionB_32
+
+k[info 2016/08/16 22:05:16.055 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_32 completed
+
+ô[warn 2016/08/16 22:05:16.056 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.057 PDT <Test worker> tid=0xb] Initializing region _B__regionB_33
+
+k[info 2016/08/16 22:05:16.057 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_33 completed
+
+ô[warn 2016/08/16 22:05:16.057 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.059 PDT <Test worker> tid=0xb] Initializing region _B__regionB_36
+
+k[info 2016/08/16 22:05:16.059 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_36 completed
+
+ô[warn 2016/08/16 22:05:16.059 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.060 PDT <Test worker> tid=0xb] Initializing region _B__regionB_37
+
+k[info 2016/08/16 22:05:16.060 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_37 completed
+
+ô[warn 2016/08/16 22:05:16.061 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.061 PDT <Test worker> tid=0xb] Initializing region _B__regionB_59
+
+k[info 2016/08/16 22:05:16.061 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_59 completed
+
+ô[warn 2016/08/16 22:05:16.061 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.062 PDT <Test worker> tid=0xb] Initializing region _B__regionB_62
+
+k[info 2016/08/16 22:05:16.062 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_62 completed
+
+ô[warn 2016/08/16 22:05:16.062 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.063 PDT <Test worker> tid=0xb] Initializing region _B__regionB_63
+
+k[info 2016/08/16 22:05:16.063 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_63 completed
+
+ô[warn 2016/08/16 22:05:16.064 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.064 PDT <Test worker> tid=0xb] Initializing region _B__regionB_60
+
+k[info 2016/08/16 22:05:16.065 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_60 completed
+
+ô[warn 2016/08/16 22:05:16.065 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.067 PDT <Test worker> tid=0xb] Initializing region _B__regionB_61
+
+k[info 2016/08/16 22:05:16.067 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_61 completed
+
+ô[warn 2016/08/16 22:05:16.067 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.068 PDT <Test worker> tid=0xb] Initializing region _B__regionB_13
+
+k[info 2016/08/16 22:05:16.068 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_13 completed
+
+ô[warn 2016/08/16 22:05:16.069 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.069 PDT <Test worker> tid=0xb] Initializing region _B__regionB_12
+
+k[info 2016/08/16 22:05:16.070 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_12 completed
+
+ô[warn 2016/08/16 22:05:16.070 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.070 PDT <Test worker> tid=0xb] Initializing region _B__regionB_11
+
+k[info 2016/08/16 22:05:16.071 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_11 completed
+
+ô[warn 2016/08/16 22:05:16.071 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.071 PDT <Test worker> tid=0xb] Initializing region _B__regionB_10
+
+k[info 2016/08/16 22:05:16.071 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_10 completed
+
+ô[warn 2016/08/16 22:05:16.072 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.072 PDT <Test worker> tid=0xb] Initializing region _B__regionB_17
+
+k[info 2016/08/16 22:05:16.072 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_17 completed
+
+ô[warn 2016/08/16 22:05:16.073 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.073 PDT <Test worker> tid=0xb] Initializing region _B__regionB_16
+
+k[info 2016/08/16 22:05:16.074 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_16 completed
+
+ô[warn 2016/08/16 22:05:16.074 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.074 PDT <Test worker> tid=0xb] Initializing region _B__regionB_15
+
+k[info 2016/08/16 22:05:16.075 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_15 completed
+
+ô[warn 2016/08/16 22:05:16.075 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.076 PDT <Test worker> tid=0xb] Initializing region _B__regionB_14
+
+k[info 2016/08/16 22:05:16.076 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_14 completed
+
+ô[warn 2016/08/16 22:05:16.076 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.077 PDT <Test worker> tid=0xb] Initializing region _B__regionB_18
+
+k[info 2016/08/16 22:05:16.078 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_18 completed
+
+ô[warn 2016/08/16 22:05:16.079 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:16.081 PDT <Test worker> tid=0xb] Initializing region _B__regionB_7
+
+j[info 2016/08/16 22:05:16.082 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_7 completed
+
+ô[warn 2016/08/16 22:05:16.083 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:16.085 PDT <Test worker> tid=0xb] Initializing region _B__regionB_9
+
+j[info 2016/08/16 22:05:16.086 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_9 completed
+
+ô[warn 2016/08/16 22:05:16.087 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+[[info 2016/08/16 22:05:16.088 PDT <Test worker> tid=0xb] Initializing region _B__regionB_8
+
+j[info 2016/08/16 22:05:16.089 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_8 completed
+
+ô[warn 2016/08/16 22:05:16.090 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.093 PDT <Test worker> tid=0xb] Initializing region _B__regionB_79
+
+k[info 2016/08/16 22:05:16.095 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_79 completed
+
+ô[warn 2016/08/16 22:05:16.099 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.102 PDT <Test worker> tid=0xb] Initializing region _B__regionB_80
+
+k[info 2016/08/16 22:05:16.103 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_80 completed
+
+ô[warn 2016/08/16 22:05:16.104 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.105 PDT <Test worker> tid=0xb] Initializing region _B__regionB_20
+
+k[info 2016/08/16 22:05:16.105 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_20 completed
+
+ô[warn 2016/08/16 22:05:16.106 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.107 PDT <Test worker> tid=0xb] Initializing region _B__regionB_27
+
+k[info 2016/08/16 22:05:16.107 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_27 completed
+
+ô[warn 2016/08/16 22:05:16.107 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.109 PDT <Test worker> tid=0xb] Initializing region _B__regionB_19
+
+k[info 2016/08/16 22:05:16.109 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_19 completed
+
+ô[warn 2016/08/16 22:05:16.110 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.111 PDT <Test worker> tid=0xb] Initializing region _B__regionB_26
+
+k[info 2016/08/16 22:05:16.111 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_26 completed
+
+ô[warn 2016/08/16 22:05:16.113 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.115 PDT <Test worker> tid=0xb] Initializing region _B__regionB_25
+
+k[info 2016/08/16 22:05:16.115 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_25 completed
+
+ô[warn 2016/08/16 22:05:16.116 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.118 PDT <Test worker> tid=0xb] Initializing region _B__regionB_24
+
+k[info 2016/08/16 22:05:16.118 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_24 completed
+
+ô[warn 2016/08/16 22:05:16.118 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.119 PDT <Test worker> tid=0xb] Initializing region _B__regionB_22
+
+k[info 2016/08/16 22:05:16.119 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_22 completed
+
+ô[warn 2016/08/16 22:05:16.120 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.120 PDT <Test worker> tid=0xb] Initializing region _B__regionB_21
+
+k[info 2016/08/16 22:05:16.120 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_21 completed
+
+ô[warn 2016/08/16 22:05:16.121 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.122 PDT <Test worker> tid=0xb] Initializing region _B__regionB_23
+
+k[info 2016/08/16 22:05:16.122 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_23 completed
+
+ô[warn 2016/08/16 22:05:16.122 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.124 PDT <Test worker> tid=0xb] Initializing region _B__regionB_101
+
+l[info 2016/08/16 22:05:16.124 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_101 completed
+
+ô[warn 2016/08/16 22:05:16.124 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.125 PDT <Test worker> tid=0xb] Initializing region _B__regionB_108
+
+l[info 2016/08/16 22:05:16.126 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_108 completed
+
+ô[warn 2016/08/16 22:05:16.126 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.128 PDT <Test worker> tid=0xb] Initializing region _B__regionB_100
+
+l[info 2016/08/16 22:05:16.128 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_100 completed
+
+ô[warn 2016/08/16 22:05:16.129 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.130 PDT <Test worker> tid=0xb] Initializing region _B__regionB_107
+
+l[info 2016/08/16 22:05:16.131 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_107 completed
+
+ô[warn 2016/08/16 22:05:16.131 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.132 PDT <Test worker> tid=0xb] Initializing region _B__regionB_99
+
+k[info 2016/08/16 22:05:16.133 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_99 completed
+
+ô[warn 2016/08/16 22:05:16.133 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.134 PDT <Test worker> tid=0xb] Initializing region _B__regionB_106
+
+l[info 2016/08/16 22:05:16.134 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_106 completed
+
+ô[warn 2016/08/16 22:05:16.134 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.135 PDT <Test worker> tid=0xb] Initializing region _B__regionB_98
+
+k[info 2016/08/16 22:05:16.135 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_98 completed
+
+ô[warn 2016/08/16 22:05:16.135 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.136 PDT <Test worker> tid=0xb] Initializing region _B__regionB_105
+
+l[info 2016/08/16 22:05:16.137 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_105 completed
+
+ô[warn 2016/08/16 22:05:16.137 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.138 PDT <Test worker> tid=0xb] Initializing region _B__regionB_104
+
+l[info 2016/08/16 22:05:16.139 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_104 completed
+
+ô[warn 2016/08/16 22:05:16.139 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.140 PDT <Test worker> tid=0xb] Initializing region _B__regionB_103
+
+l[info 2016/08/16 22:05:16.141 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_103 completed
+
+ô[warn 2016/08/16 22:05:16.142 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.144 PDT <Test worker> tid=0xb] Initializing region _B__regionB_102
+
+l[info 2016/08/16 22:05:16.145 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_102 completed
+
+ô[warn 2016/08/16 22:05:16.145 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+][info 2016/08/16 22:05:16.147 PDT <Test worker> tid=0xb] Initializing region _B__regionB_109
+
+l[info 2016/08/16 22:05:16.148 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_109 completed
+
+ô[warn 2016/08/16 22:05:16.148 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.149 PDT <Test worker> tid=0xb] Initializing region _B__regionB_97
+
+k[info 2016/08/16 22:05:16.149 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_97 completed
+
+ô[warn 2016/08/16 22:05:16.149 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.150 PDT <Test worker> tid=0xb] Initializing region _B__regionB_96
+
+k[info 2016/08/16 22:05:16.150 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_96 completed
+
+ô[warn 2016/08/16 22:05:16.151 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.152 PDT <Test worker> tid=0xb] Initializing region _B__regionB_70
+
+k[info 2016/08/16 22:05:16.152 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_70 completed
+
+ô[warn 2016/08/16 22:05:16.152 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.153 PDT <Test worker> tid=0xb] Initializing region _B__regionB_77
+
+k[info 2016/08/16 22:05:16.153 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_77 completed
+
+ô[warn 2016/08/16 22:05:16.153 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.154 PDT <Test worker> tid=0xb] Initializing region _B__regionB_69
+
+k[info 2016/08/16 22:05:16.154 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_69 completed
+
+ô[warn 2016/08/16 22:05:16.155 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.156 PDT <Test worker> tid=0xb] Initializing region _B__regionB_76
+
+k[info 2016/08/16 22:05:16.156 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_76 completed
+
+ô[warn 2016/08/16 22:05:16.157 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.159 PDT <Test worker> tid=0xb] Initializing region _B__regionB_75
+
+k[info 2016/08/16 22:05:16.159 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_75 completed
+
+ô[warn 2016/08/16 22:05:16.160 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.161 PDT <Test worker> tid=0xb] Initializing region _B__regionB_89
+
+k[info 2016/08/16 22:05:16.161 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_89 completed
+
+ô[warn 2016/08/16 22:05:16.162 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.163 PDT <Test worker> tid=0xb] Initializing region _B__regionB_74
+
+k[info 2016/08/16 22:05:16.163 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_74 completed
+
+ô[warn 2016/08/16 22:05:16.163 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.164 PDT <Test worker> tid=0xb] Initializing region _B__regionB_72
+
+k[info 2016/08/16 22:05:16.164 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_72 completed
+
+ô[warn 2016/08/16 22:05:16.165 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.165 PDT <Test worker> tid=0xb] Initializing region _B__regionB_71
+
+k[info 2016/08/16 22:05:16.166 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_71 completed
+
+ô[warn 2016/08/16 22:05:16.166 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.167 PDT <Test worker> tid=0xb] Initializing region _B__regionB_78
+
+k[info 2016/08/16 22:05:16.167 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_78 completed
+
+ô[warn 2016/08/16 22:05:16.167 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.169 PDT <Test worker> tid=0xb] Initializing region _B__regionB_73
+
+k[info 2016/08/16 22:05:16.169 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_73 completed
+
+ô[warn 2016/08/16 22:05:16.169 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.170 PDT <Test worker> tid=0xb] Initializing region _B__regionB_45
+
+k[info 2016/08/16 22:05:16.171 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_45 completed
+
+ô[warn 2016/08/16 22:05:16.171 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.172 PDT <Test worker> tid=0xb] Initializing region _B__regionB_52
+
+k[info 2016/08/16 22:05:16.173 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_52 completed
+
+ô[warn 2016/08/16 22:05:16.174 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.175 PDT <Test worker> tid=0xb] Initializing region _B__regionB_44
+
+k[info 2016/08/16 22:05:16.176 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_44 completed
+
+ô[warn 2016/08/16 22:05:16.176 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.179 PDT <Test worker> tid=0xb] Initializing region _B__regionB_51
+
+k[info 2016/08/16 22:05:16.179 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_51 completed
+
+ô[warn 2016/08/16 22:05:16.179 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.181 PDT <Test worker> tid=0xb] Initializing region _B__regionB_58
+
+k[info 2016/08/16 22:05:16.182 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_58 completed
+
+ô[warn 2016/08/16 22:05:16.182 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.185 PDT <Test worker> tid=0xb] Initializing region _B__regionB_43
+
+k[info 2016/08/16 22:05:16.186 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_43 completed
+
+ô[warn 2016/08/16 22:05:16.186 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.188 PDT <Test worker> tid=0xb] Initializing region _B__regionB_50
+
+k[info 2016/08/16 22:05:16.189 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_50 completed
+
+ô[warn 2016/08/16 22:05:16.190 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.191 PDT <Test worker> tid=0xb] Initializing region _B__regionB_57
+
+k[info 2016/08/16 22:05:16.192 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_57 completed
+
+ô[warn 2016/08/16 22:05:16.192 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.193 PDT <Test worker> tid=0xb] Initializing region _B__regionB_42
+
+k[info 2016/08/16 22:05:16.194 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_42 completed
+
+ô[warn 2016/08/16 22:05:16.194 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.196 PDT <Test worker> tid=0xb] Initializing region _B__regionB_49
+
+k[info 2016/08/16 22:05:16.196 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_49 completed
+
+ô[warn 2016/08/16 22:05:16.197 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.198 PDT <Test worker> tid=0xb] Initializing region _B__regionB_56
+
+k[info 2016/08/16 22:05:16.199 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_56 completed
+
+ô[warn 2016/08/16 22:05:16.199 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.201 PDT <Test worker> tid=0xb] Initializing region _B__regionB_47
+
+k[info 2016/08/16 22:05:16.201 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_47 completed
+
+ô[warn 2016/08/16 22:05:16.202 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.203 PDT <Test worker> tid=0xb] Initializing region _B__regionB_46
+
+k[info 2016/08/16 22:05:16.203 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_46 completed
+
+ô[warn 2016/08/16 22:05:16.204 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.205 PDT <Test worker> tid=0xb] Initializing region _B__regionB_53
+
+k[info 2016/08/16 22:05:16.205 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_53 completed
+
+ô[warn 2016/08/16 22:05:16.206 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.207 PDT <Test worker> tid=0xb] Initializing region _B__regionB_55
+
+k[info 2016/08/16 22:05:16.207 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_55 completed
+
+ô[warn 2016/08/16 22:05:16.207 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.209 PDT <Test worker> tid=0xb] Initializing region _B__regionB_48
+
+k[info 2016/08/16 22:05:16.209 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_48 completed
+
+ô[warn 2016/08/16 22:05:16.210 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.211 PDT <Test worker> tid=0xb] Initializing region _B__regionB_41
+
+k[info 2016/08/16 22:05:16.211 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_41 completed
+
+ô[warn 2016/08/16 22:05:16.212 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.213 PDT <Test worker> tid=0xb] Initializing region _B__regionB_54
+
+k[info 2016/08/16 22:05:16.214 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_54 completed
+
+ô[warn 2016/08/16 22:05:16.214 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.215 PDT <Test worker> tid=0xb] Initializing region _B__regionB_40
+
+k[info 2016/08/16 22:05:16.215 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_40 completed
+
+ô[warn 2016/08/16 22:05:16.215 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.216 PDT <Test worker> tid=0xb] Initializing region _B__regionB_39
+
+k[info 2016/08/16 22:05:16.217 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_39 completed
+
+ô[warn 2016/08/16 22:05:16.217 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+\[info 2016/08/16 22:05:16.218 PDT <Test worker> tid=0xb] Initializing region _B__regionB_38
+
+k[info 2016/08/16 22:05:16.218 PDT <Test worker> tid=0xb] Initialization of region _B__regionB_38 completed
+
+ô[warn 2016/08/16 22:05:16.219 PDT <Test worker> tid=0xb] enforce-unique-host and redundancy-zone properties have no effect for a LonerDistributedSystem.
+
+v[info 2016/08/16 22:05:16.314 PDT <Test worker> tid=0xb] Done. Copied 500 keys from regionA to regionB regions [500].
+

@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group 'org.wmk.geode'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url "https://repository.apache.org/content/repositories/snapshots/"
+    }
+}
+
+dependencies {
+    compile "org.apache.geode:geode-core:$geodeVersion"
+    compile "org.apache.geode:geode-lucene:$geodeVersion"
+    testCompile group: 'junit', name: 'junit', version: "$junitVersion"
+}
