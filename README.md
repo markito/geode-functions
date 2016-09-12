@@ -8,5 +8,6 @@ Collection of Apache Geode util functions.
 | Function name | Function ID | Description |
 |---------------|-------------|-------------|
 |  CopyRegion   |  CopyRegion | Executes OnRegion and receives destination region name as `String` |
-|               |             |             |
-|               |             |             |
+|  ClearRegionFunction   |  ClearRegionFunction | Executes OnRegion and clears the local primary entries one at a time |
+|  ClearRegionRemoveAllFunction   |  ClearRegionRemoveAllFunction | Executes OnRegion and clears the local primary entries all at once using removeAll |
+
