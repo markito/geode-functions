@@ -11,3 +11,4 @@ Collection of Apache Geode util functions.
 |  ClearRegionFunction   |  ClearRegionFunction | Executes OnRegion and clears the local primary entries one at a time |
 |  ClearRegionRemoveAllFunction   |  ClearRegionRemoveAllFunction | Executes OnRegion and clears the local primary entries all at once using removeAll |
 
+Compatible with Apache Geode 1.0
