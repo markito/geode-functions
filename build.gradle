@@ -10,9 +10,6 @@ targetCompatibility = 1.8
 repositories {
     mavenLocal()
     mavenCentral()
-    maven {
-        url "https://repository.apache.org/content/repositories/snapshots/"
-    }
 }
 
 dependencies {
