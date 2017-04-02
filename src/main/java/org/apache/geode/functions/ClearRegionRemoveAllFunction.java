@@ -16,14 +16,14 @@ package org.apache.geode.functions;
  * limitations under the License.
 */
 
-import com.gemstone.gemfire.cache.Declarable;
-import com.gemstone.gemfire.cache.Region;
+import org.apache.geode.cache.Declarable;
+import org.apache.geode.cache.Region;
 
-import com.gemstone.gemfire.cache.execute.Function;
-import com.gemstone.gemfire.cache.execute.FunctionContext;
-import com.gemstone.gemfire.cache.execute.RegionFunctionContext;
+import org.apache.geode.cache.execute.Function;
+import org.apache.geode.cache.execute.FunctionContext;
+import org.apache.geode.cache.execute.RegionFunctionContext;
 
-import com.gemstone.gemfire.cache.partition.PartitionRegionHelper;
+import org.apache.geode.cache.partition.PartitionRegionHelper;
 
 import java.util.Iterator;
 import java.util.Properties;
